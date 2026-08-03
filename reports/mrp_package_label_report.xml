@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <record id="action_report_mrp_package_tag_new" model="ir.actions.report">
+        <field name="name">Etiqueta nueva de fabricación</field>
+        <field name="model">mrp.production</field>
+        <field name="report_type">qweb-pdf</field>
+        <field name="report_name">package_move.print_tag_new</field>
+        <field name="report_file">package_move.print_tag_new</field>
+        <field name="binding_model_id" eval="False"/>
+        <field name="binding_type">report</field>
+        <field name="paperformat_id" ref="package_move.paperformat_student"/>
+        <field name="print_report_name">object._new_label_download_filename()</field>
+    </record>
+</odoo>
