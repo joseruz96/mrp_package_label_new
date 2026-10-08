@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<odoo>
+    <template id="print_tag_new_product_variant"
+              inherit_id="package_move.print_tag_new"
+              name="Etiqueta nueva: variante bajo el producto">
+        <xpath expr="//span[@t-esc='product']" position="replace">
+            <div style="font-size:21pt;font-weight:700;line-height:9.5mm;">
+                <span t-esc="product"/>
+            </div>
+            <t t-if="label.get('variante')">
+                <div style="font-size:14pt;font-weight:600;line-height:7mm;text-transform:uppercase;">
+                    <span t-esc="label.get('variante')"/>
+                </div>
+            </t>
+        </xpath>
+    </template>
+</odoo>
