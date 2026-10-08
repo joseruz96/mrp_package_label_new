@@ -8,7 +8,7 @@
                 <span t-esc="product"/>
             </div>
             <t t-if="label.get('variante')">
-                <div style="font-size:14pt;font-weight:600;line-height:7mm;text-transform:uppercase;">
+                <div style="font-size:20pt;font-weight:700;line-height:9mm;text-transform:uppercase;">
                     <span t-esc="label.get('variante')"/>
                 </div>
             </t>
